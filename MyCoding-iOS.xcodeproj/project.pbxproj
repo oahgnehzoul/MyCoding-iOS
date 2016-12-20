@@ -25,7 +25,7 @@
 		6095F96A1E09935100375A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6095F96C1E09935100375A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6095F96F1E09935100375A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6095F9711E09935100375A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6095F9711E09935100375A6B /* MyCoding-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCoding-iOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				6095F9691E09935100375A6B /* Main.storyboard */,
 				6095F96C1E09935100375A6B /* Assets.xcassets */,
 				6095F96E1E09935100375A6B /* LaunchScreen.storyboard */,
-				6095F9711E09935100375A6B /* Info.plist */,
+				6095F9711E09935100375A6B /* MyCoding-iOS-Info.plist */,
 				6095F9601E09935100375A6B /* Supporting Files */,
 			);
 			path = "MyCoding-iOS";
@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					6095F95C1E09935100375A6B = {
 						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -272,7 +272,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "MyCoding-iOS/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MyCoding-iOS/MyCoding-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oahgnehzoul.MyCoding-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "MyCoding-iOS/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MyCoding-iOS/MyCoding-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oahgnehzoul.MyCoding-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

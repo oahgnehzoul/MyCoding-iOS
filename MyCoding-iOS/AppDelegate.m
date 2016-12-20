@@ -17,7 +17,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
+    if ([self isLogin]) {
+        [self setupTabVC];
+    } else {
+        [self setupIntroductionVC];
+    }
+
     return YES;
+}
+
+- (void)customizeInterface {
+    //设置 Nav背景色、title 色
+    //设置返回按钮箭头颜色
+    //设置 UITextField 光标颜色
+    //设置 UITextView 光标颜色
+}
+
+- (BOOL)isLogin {
+    return NO;
+}
+
+- (void)setupTabVC {
+
+}
+
+- (void)setupIntroductionVC {
+
 }
 
 
